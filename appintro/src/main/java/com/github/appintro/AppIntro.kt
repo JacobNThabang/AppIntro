@@ -32,6 +32,16 @@ abstract class AppIntro : AppIntroBase() {
         val nextButton = findViewById<ImageButton>(R.id.next)
         nextButton.setColorFilter(color)
     }
+    
+    /**
+     * Override back button arrow color
+     *
+     * @param color your color
+     */
+    fun setBackArrowColor(@ColorInt color: Int) {
+        val backButton = findViewById<ImageButton>(R.id.back)
+        backButton.setColorFilter(color)
+    }
 
     /**
      * Override separator color
